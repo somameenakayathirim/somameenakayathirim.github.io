@@ -13,6 +13,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 import { Sparkles, Target } from 'lucide-react'
 
 const About = () => {
@@ -52,9 +53,11 @@ const About = () => {
               <div className="glass rounded-2xl p-8 text-center bg-gray-900/50 backdrop-blur-lg border border-gray-700">
                 {/* Profile Image */}
                 <div className="w-48 h-48 mx-auto mb-6">
-                  <img 
+                  <Image 
                     src="/assets/img/profile.png" 
                     alt="Soma Meena Kayathiri M" 
+                    width={192}
+                    height={192}
                     className="w-full h-full rounded-full object-cover border-4 border-primary-500 shadow-xl"
                   />
                 </div>

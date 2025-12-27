@@ -15,6 +15,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 import { CheckCircle } from 'lucide-react'
 
 const Certifications = () => {
@@ -70,9 +71,11 @@ const Certifications = () => {
             >
               <div className="flex flex-col items-center text-center">
                 <div className="w-24 h-24 mb-3 bg-gray-800 rounded-lg p-2 shadow-md">
-                  <img 
+                  <Image 
                     src={cert.image} 
                     alt={cert.title}
+                    width={96}
+                    height={96}
                     className="w-full h-full object-contain"
                   />
                 </div>

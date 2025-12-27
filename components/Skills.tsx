@@ -14,7 +14,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { Code, Database, Cloud, Brain, Cpu, GitBranch } from 'lucide-react'
+import { Code, Database, Cloud, Cpu, GitBranch } from 'lucide-react'
 
 const Skills = () => {
   // Reference for intersection observer

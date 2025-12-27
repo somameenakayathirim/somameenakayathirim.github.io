@@ -13,6 +13,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 import { Calendar, MapPin } from 'lucide-react'
 
 const Experience = () => {
@@ -117,9 +118,11 @@ const Experience = () => {
                 {/* Company Header - Centered Layout */}
                 <div className="flex flex-col items-center text-center mb-6">
                   {/* Company Logo */}
-                  <img 
+                  <Image 
                     src={exp.logo} 
                     alt={`${exp.company} logo`}
+                    width={64}
+                    height={64}
                     className="w-16 h-16 object-contain rounded-lg bg-white p-2 mb-4 shadow-md"
                   />
                   

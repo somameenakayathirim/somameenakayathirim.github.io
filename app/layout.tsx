@@ -5,12 +5,32 @@
  * It sets up:
  * - HTML structure and metadata
  * - SEO optimization with Open Graph tags
- * - Font loading from Google Fonts
+ * - Font loading from Google Fonts using next/font
  * - Global document structure
  */
 
 import type { Metadata } from 'next'
+import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import './globals.css'
+
+// Load fonts using next/font for optimal performance
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-grotesk',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-jetbrains-mono',
+})
 
 /**
  * Metadata configuration for SEO and social media sharing
@@ -49,14 +69,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <head>
         {/* Preconnect to Google Fonts for faster font loading */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
-        {/* Load custom fonts: Inter (body), Space Grotesk (display), JetBrains Mono (code) */}
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
       <body>{children}</body>
     </html>
