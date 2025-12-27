@@ -193,7 +193,7 @@ function CloudInfrastructure({ isDark }: { isDark: boolean }) {
       
       {/* Additional cross connections for infrastructure mesh */}
       <lineSegments>
-        <buffersGeometry>
+        <bufferGeometry>
           <bufferAttribute
             attach="attributes-position"
             count={8}
@@ -205,7 +205,7 @@ function CloudInfrastructure({ isDark }: { isDark: boolean }) {
             ])}
             itemSize={3}
           />
-        </buffersGeometry>
+        </bufferGeometry>
         <lineBasicMaterial color={nodeColor} transparent opacity={0.15} />
       </lineSegments>
     </group>
