@@ -353,7 +353,7 @@ export default function Hero3D() {
           
           {/* Tech Stack Pills with Glass Morphism */}
           <div className="flex flex-wrap justify-center gap-3 mt-8">
-            {['Docker', 'Kubernetes', 'AWS', 'Terraform', 'Jenkins', 'GitLab CI', 'Cloud Architecture'].map((tech, idx) => (
+            {['Docker', 'Kubernetes', 'AWS', 'Azure', 'GCP', 'Terraform', 'Jenkins', 'GitLab CI'].map((tech, idx) => (
               <span 
                 key={tech}
                 className="px-5 py-2.5 rounded-full text-sm font-medium font-['Inter'] backdrop-blur-md border transition-all duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer bg-white/10 border-white/20 text-gray-100 hover:bg-white/20 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]"
