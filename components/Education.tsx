@@ -25,21 +25,6 @@ const Education = () => {
 
   const education = [
     {
-      degree: 'Master of Science in Data Science',
-      field: 'Data Science',
-      institution: 'Liverpool John Moores University',
-      location: 'Liverpool, United Kingdom',
-      year: '2020 - 2022',
-      highlights: [
-        'Data Engineering',
-        'Machine Learning',
-        'Deep Learning',
-        'Computer Vision',
-        'Natural Language Processing',
-      ],
-      icon: GraduationCap,
-    },
-    {
       degree: 'Bachelor of Engineering in CS',
       field: 'Computer Science',
       institution: 'TCE College, Anna University',
@@ -83,7 +68,7 @@ const Education = () => {
         </motion.div>
 
         {/* Education Cards */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {education.map((edu, index) => {
             const Icon = edu.icon
             return (

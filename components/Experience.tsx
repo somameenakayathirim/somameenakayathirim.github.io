@@ -150,17 +150,17 @@ const Experience = () => {
                 </div>
 
                 {/* Key Achievements List */}
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {exp.achievements.map((achievement, i) => (
                     <motion.li
                       key={i}
-                      className="text-gray-200 text-center"
+                      className="text-gray-200 text-left flex items-start gap-2"
                       initial={{ opacity: 0, y: 10 }}
                       animate={isInView ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.4, delay: index * 0.2 + i * 0.1 }}
                     >
-                      <span className="text-primary-400 font-bold">• </span>
-                      {achievement}
+                      <span className="text-primary-400 font-bold flex-shrink-0">•</span>
+                      <span className="whitespace-normal">{achievement}</span>
                     </motion.li>
                   ))}
                 </ul>
