@@ -6,46 +6,6 @@ import { OrbitControls, Sphere, MeshDistortMaterial, Float } from '@react-three/
 import * as THREE from 'three'
 import gsap from 'gsap'
 
-// Enhanced AI Neural Network Nodes with glow effect
-function NeuralNode({ position, isDark }: { position: [number, number, number], isDark: boolean }) {
-  const meshRef = useRef<THREE.Mesh>(null)
-  const glowRef = useRef<THREE.Mesh>(null)
-  
-  useFrame((state) => {
-    if (meshRef.current) {
-      const scale = 1 + Math.sin(state.clock.getElapsedTime() * 2 + position[0]) * 0.3
-      meshRef.current.scale.setScalar(scale)
-      if (glowRef.current) {
-        glowRef.current.scale.setScalar(scale * 1.5)
-      }
-    }
-  })
-
-  const nodeColor = isDark ? '#60a5fa' : '#4f46e5'
-  const emissiveColor = isDark ? '#3b82f6' : '#6366f1'
-
-  return (
-    <group position={position}>
-      {/* Glow effect */}
-      <mesh ref={glowRef}>
-        <sphereGeometry args={[0.12, 16, 16]} />
-        <meshBasicMaterial color={emissiveColor} transparent opacity={0.3} />
-      </mesh>
-      {/* Main node */}
-      <mesh ref={meshRef}>
-        <sphereGeometry args={[0.08, 16, 16]} />
-        <meshStandardMaterial 
-          color={nodeColor} 
-          emissive={emissiveColor} 
-          emissiveIntensity={2}
-          metalness={0.9}
-          roughness={0.1}
-        />
-      </mesh>
-    </group>
-  )
-}
-
 // Enhanced Data Particle System with color variations
 function DataParticles({ isDark }: { isDark: boolean }) {
   const particlesRef = useRef<THREE.Points>(null)
@@ -249,37 +209,6 @@ function CloudInfrastructure({ isDark }: { isDark: boolean }) {
         <lineBasicMaterial color={nodeColor} transparent opacity={0.15} />
       </lineSegments>
     </group>
-  )
-}
-
-// Neural Network with connecting lines
-function NeuralNetwork({ isDark }: { isDark: boolean }) {
-  const nodes = [
-    [-3.5, 2.5, 0], [3.5, 2.5, 0], [0, 4, 0],
-    [-3.5, -2.5, 0], [3.5, -2.5, 0], [0, -4, 0],
-    [-4.5, 0, -2], [4.5, 0, -2], [0, 0, 3.5]
-  ] as [number, number, number][]
-
-  const linesRef = useRef<THREE.LineSegments>(null)
-
-  useFrame((state) => {
-    if (linesRef.current) {
-      linesRef.current.rotation.y = state.clock.getElapsedTime() * 0.1
-    }
-  })
-
-  const lineColor = isDark ? '#60a5fa' : '#6366f1'
-
-  return (
-    <>
-      {nodes.map((pos, i) => (
-        <NeuralNode key={i} position={pos} isDark={isDark} />
-      ))}
-      <lineSegments ref={linesRef}>
-        <edgesGeometry args={[new THREE.IcosahedronGeometry(3.5, 0)]} />
-        <lineBasicMaterial color={lineColor} transparent opacity={0.15} />
-      </lineSegments>
-    </>
   )
 }
 
