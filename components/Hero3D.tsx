@@ -163,6 +163,95 @@ function AnimatedSphere({ isDark }: { isDark: boolean }) {
   )
 }
 
+// Cloud Infrastructure with rotating nodes for DevOps theme
+function CloudInfrastructure({ isDark }: { isDark: boolean }) {
+  const containerRef = useRef<THREE.Group>(null)
+  const nodesRef = useRef<THREE.Mesh[]>([])
+
+  // Simulate cloud server nodes positioned in a cube formation
+  const nodes = [
+    { pos: [-2, 2, -2], label: 'Deploy' },
+    { pos: [2, 2, -2], label: 'Monitor' },
+    { pos: [-2, -2, -2], label: 'Scale' },
+    { pos: [2, -2, -2], label: 'Optimize' },
+    { pos: [-2, 2, 2], label: 'Secure' },
+    { pos: [2, 2, 2], label: 'CI/CD' },
+    { pos: [-2, -2, 2], label: 'Orchestrate' },
+    { pos: [2, -2, 2], label: 'Automate' },
+  ]
+
+  useFrame((state) => {
+    if (containerRef.current) {
+      // Slow rotation for the entire cloud infrastructure
+      containerRef.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.3) * 0.2
+      containerRef.current.rotation.y = state.clock.getElapsedTime() * 0.2
+      containerRef.current.rotation.z = Math.cos(state.clock.getElapsedTime() * 0.25) * 0.1
+
+      // Animate individual nodes
+      nodesRef.current.forEach((mesh, i) => {
+        if (mesh) {
+          const scale = 1 + Math.sin(state.clock.getElapsedTime() * 2 + i) * 0.2
+          mesh.scale.setScalar(scale)
+          mesh.position.y += Math.sin(state.clock.getElapsedTime() * 1.5 + i * 0.5) * 0.01
+        }
+      })
+    }
+  })
+
+  const nodeColor = isDark ? '#0ea5e9' : '#06b6d4'
+  const emissiveColor = isDark ? '#0284c7' : '#0891b2'
+
+  return (
+    <group ref={containerRef}>
+      {nodes.map((node, i) => (
+        <group key={i} position={node.pos}>
+          {/* Glow effect */}
+          <mesh>
+            <boxGeometry args={[0.35, 0.35, 0.35]} />
+            <meshBasicMaterial color={emissiveColor} transparent opacity={0.2} />
+          </mesh>
+          {/* Main node */}
+          <mesh ref={(el) => { if (el && nodesRef.current) nodesRef.current[i] = el }}>
+            <octahedronGeometry args={[0.15, 0]} />
+            <meshStandardMaterial 
+              color={nodeColor}
+              emissive={emissiveColor}
+              emissiveIntensity={1.5}
+              metalness={0.85}
+              roughness={0.15}
+              wireframe={false}
+            />
+          </mesh>
+        </group>
+      ))}
+      
+      {/* Connecting lines between nodes - Infrastructure connections */}
+      <lineSegments>
+        <edgesGeometry args={[new THREE.BoxGeometry(4, 4, 4, 1, 1, 1)]} />
+        <lineBasicMaterial color={nodeColor} transparent opacity={0.3} linewidth={2} />
+      </lineSegments>
+      
+      {/* Additional cross connections for infrastructure mesh */}
+      <lineSegments>
+        <buffersGeometry>
+          <bufferAttribute
+            attach="attributes-position"
+            count={8}
+            array={new Float32Array([
+              -2, 2, -2, 2, -2, 2,
+              2, 2, -2, -2, -2, 2,
+              -2, 2, 2, 2, -2, -2,
+              2, 2, 2, -2, -2, -2,
+            ])}
+            itemSize={3}
+          />
+        </buffersGeometry>
+        <lineBasicMaterial color={nodeColor} transparent opacity={0.15} />
+      </lineSegments>
+    </group>
+  )
+}
+
 // Neural Network with connecting lines
 function NeuralNetwork({ isDark }: { isDark: boolean }) {
   const nodes = [
@@ -200,10 +289,10 @@ export default function Hero3D() {
   const [textIndex, setTextIndex] = useState(0)
   
   const aiTexts = [
-    'LLMs • GenAI • MLOps',
-    'Deep Learning • Neural Networks',
-    'AI Innovation • Model Optimization',
-    'Machine Learning • Data Science'
+    'Cloud Architecture • Infrastructure as Code',
+    'CI/CD • Container Orchestration • Kubernetes',
+    'DevOps Automation • Cloud Security',
+    'AWS • Azure • GCP • Infrastructure Excellence'
   ]
 
   useEffect(() => {
@@ -270,8 +359,8 @@ export default function Hero3D() {
           {/* Main AI Brain */}
           <AnimatedSphere isDark={true} />
           
-          {/* Neural Network Nodes */}
-          <NeuralNetwork isDark={true} />
+          {/* Cloud Infrastructure - DevOps Theme */}
+          <CloudInfrastructure isDark={true} />
           
           {/* Data Particles */}
           <DataParticles isDark={true} />
@@ -319,7 +408,7 @@ export default function Hero3D() {
             ref={subtitleRef}
             className="text-xl md:text-2xl lg:text-3xl mb-6 font-['Inter'] font-medium text-gray-100"
           >
-            Senior Data Science Engineer
+            Cloud DevOps Engineer
           </p>
           <div className="h-10 mb-10">
             <p 
@@ -335,7 +424,7 @@ export default function Hero3D() {
           
           {/* Tech Stack Pills with Glass Morphism */}
           <div className="flex flex-wrap justify-center gap-3 mt-8">
-            {['Python', 'Pytorch', 'Langchain', 'Langraph', 'MCP', 'A2A', 'Agentic AI'].map((tech, idx) => (
+            {['Docker', 'Kubernetes', 'AWS', 'Terraform', 'Jenkins', 'GitLab CI', 'Cloud Architecture'].map((tech, idx) => (
               <span 
                 key={tech}
                 className="px-5 py-2.5 rounded-full text-sm font-medium font-['Inter'] backdrop-blur-md border transition-all duration-300 hover:scale-110 hover:-translate-y-1 cursor-pointer bg-white/10 border-white/20 text-gray-100 hover:bg-white/20 hover:shadow-[0_0_20px_rgba(99,102,241,0.4)]"

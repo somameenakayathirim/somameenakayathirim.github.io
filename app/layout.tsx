@@ -38,10 +38,10 @@ const jetbrainsMono = JetBrains_Mono({
  */
 export const metadata: Metadata = {
   // Page title displayed in browser tab
-  title: 'Soma Meena Kayathiri M | Senior Data Science Engineer',
+  title: 'Soma Meena Kayathiri M | Cloud DevOps Engineer',
   
   // Meta description for search engine results
-  description: 'Senior Data Science Engineer with 9.5+ years of experience in LLMs, GenAI, MLOps, and cloud platforms. US Patent holder specializing in AI-powered solutions.',
+  description: 'Cloud DevOps Engineer with expertise in Kubernetes, CI/CD, Infrastructure as Code, and cloud architecture. Specialized in AWS, Azure, and GCP platform automation.',
   
   // Keywords for SEO
   keywords: 'Data Science, Machine Learning, LLM, GenAI, MLOps, AWS, Azure, Python, AI Engineer',
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
   // Open Graph tags for social media sharing (LinkedIn, Facebook, Twitter, etc.)
   openGraph: {
     type: 'website',
-    title: 'Soma Meena Kayathiri M | Senior Data Science Engineer',
-    description: 'Senior Data Science Engineer specializing in LLMs, GenAI, and MLOps',
+    title: 'Soma Meena Kayathiri M | Cloud DevOps Engineer',
+    description: 'Cloud DevOps Engineer specializing in Kubernetes, CI/CD pipelines, and infrastructure automation',
     url: 'https://somameenakayathirim.github.io/',
   },
 }
