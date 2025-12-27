@@ -129,7 +129,7 @@ function CloudInfrastructure({ isDark }: { isDark: boolean }) {
   const nodesRef = useRef<THREE.Mesh[]>([])
 
   // Simulate cloud server nodes positioned in a cube formation
-  const nodes = [
+  const nodes: Array<{ pos: [number, number, number], label: string }> = [
     { pos: [-2, 2, -2], label: 'Deploy' },
     { pos: [2, 2, -2], label: 'Monitor' },
     { pos: [-2, -2, -2], label: 'Scale' },
