@@ -71,9 +71,6 @@ const About = () => {
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
                     8.6+ Years
                   </span>
-                  <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
-                    US Patent Holder
-                  </span>
                 </div>
               </div>
             </motion.div>

@@ -26,7 +26,7 @@ const Experience = dynamic(() => import('@/components/Experience'), { ssr: false
 const Skills = dynamic(() => import('@/components/Skills'), { ssr: false })
 const Projects = dynamic(() => import('@/components/Projects'), { ssr: false })
 const Certifications = dynamic(() => import('@/components/Certifications'), { ssr: false })
-const Patent = dynamic(() => import('@/components/Patent'), { ssr: false })
+const Blog = dynamic(() => import('@/components/Blog'), { ssr: false })
 const Education = dynamic(() => import('@/components/Education'), { ssr: false })
 const Contact = dynamic(() => import('@/components/Contact'), { ssr: false })
 const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
@@ -62,7 +62,7 @@ export default function Home() {
           <Skills />
           <Projects />
           <Certifications />
-          <Patent />
+          <Blog />
           <Education />
           <Contact />
           <Footer />
