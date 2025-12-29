@@ -25,6 +25,13 @@ const Certifications = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const certifications = [
+    {
+      title: 'CKA: Certified Kubernetes Administrator',
+      issuer: 'Linux Foundation',
+      credential: 'View Certificate',
+      image: '/assets/img/cka_logo.png',
+      link: 'https://www.credly.com/badges/468140ec-49f8-48da-962e-a64d2492313c',
+    },
   ]
 
   return (
