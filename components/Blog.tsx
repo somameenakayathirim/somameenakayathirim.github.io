@@ -28,7 +28,7 @@ const Blog = () => {
       date: '2 days ago',
       readTime: '8 min read',
       tags: ['Kubernetes', 'KEDA', 'RabbitMQ', 'DevOps'],
-      url: 'https://somameenakayathiri.medium.com/event-driven-autoscaling-in-kubernetes-using-keda-rabbitmq-8c0f0e5e8f5e',
+      url: 'https://somameenakayathiri.medium.com/event-driven-autoscaling-in-kubernetes-using-keda-rabbitmq-f2364f6306ed',
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Blog = () => {
       date: 'Feb 4',
       readTime: '10 min read',
       tags: ['AWS', 'EKS', 'Security', 'Kubernetes'],
-      url: 'https://somameenakayathiri.medium.com/securing-aws-eks-with-kyverno-calico-guarduty-7d8c5e9b2f3a',
+      url: 'https://somameenakayathiri.medium.com/securing-aws-eks-with-kyverno-calico-guardduty-ef85e27a0709',
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Blog = () => {
       date: 'Jan 25',
       readTime: '12 min read',
       tags: ['Jenkins', 'ArgoCD', 'CI/CD', 'AWS'],
-      url: 'https://somameenakayathiri.medium.com/complete-jenkins-ci-cd-pipeline-with-argocd-aws-eks-deployment-4e5f2c8b9d1a',
+      url: 'https://somameenakayathiri.medium.com/comprehensive-guide-to-jenkins-ci-cd-pipeline-with-argocd-integration-2be729c41a8b',
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Blog = () => {
       date: 'Jan 8',
       readTime: '6 min read',
       tags: ['Docker', 'DevOps', 'Containerization'],
-      url: 'https://somameenakayathiri.medium.com/introduction-to-docker-multi-stage-builds-6f3e2a8c1d5b',
+      url: 'https://somameenakayathiri.medium.com/introduction-to-docker-multi-stage-builds-8674e18c261f',
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const Blog = () => {
       date: 'Jan 4',
       readTime: '7 min read',
       tags: ['AWS', 'Networking', 'Cloud'],
-      url: 'https://somameenakayathiri.medium.com/nat-gateway-vs-vpc-endpoint-in-aws-9c2f5e8b4a7d',
+      url: 'https://somameenakayathiri.medium.com/nat-gateway-vs-vpc-endpoint-bd598c903594',
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const Blog = () => {
       date: 'Jan 2',
       readTime: '9 min read',
       tags: ['Kubernetes', 'Networking', 'DevOps'],
-      url: 'https://somameenakayathiri.medium.com/service-type-load-balancer-vs-ingress-controller-in-kubernetes-3a6f1e9c2d8b',
+      url: 'https://somameenakayathiri.medium.com/service-type-load-balancer-vs-ingress-controller-in-kubernetes-which-is-better-7358c4ca82c5',
     },
   ]
 
