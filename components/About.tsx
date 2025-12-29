@@ -67,9 +67,12 @@ const About = () => {
                 <p className="text-primary-400 font-semibold text-lg">Cloud DevOps Engineer</p>
                 
                 {/* Quick Stats */}
-                <div className="mt-4 flex justify-center gap-2">
+                <div className="mt-4 flex justify-center gap-2 flex-wrap">
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
                     8.6+ Years
+                  </span>
+                  <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
+                    Technical Blog Writer
                   </span>
                 </div>
               </div>
