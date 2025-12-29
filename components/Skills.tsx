@@ -38,16 +38,22 @@ const Skills = () => {
       color: 'from-blue-500 to-blue-700',
     },
     {
-      title: 'Frameworks & Platforms',
+      title: 'Frameworks',
       icon: GitBranch,
-      skills: ['Spring Boot', 'Argo CD', 'Infrastructure as Code (IaC)', 'Jenkins', 'Terraform '],
+      skills: ['Spring Boot', 'Argo CD', 'IaC', 'Jenkins', 'Terraform'],
       color: 'from-indigo-500 to-indigo-700',
     },
     {
-      title: 'Cloud',
+      title: 'Cloud Platforms',
       icon: Cloud,
-      skills: ['Amazon Web Services', 'Microsoft Azure', 'Google Cloud Platform', 'Kubernetes – EKS, AKS'],
+      skills: ['AWS', 'Azure', 'GCP'],
       color: 'from-cyan-500 to-cyan-700',
+    },
+    {
+      title: 'Containerization & Orchestration',
+      icon: Cloud,
+      skills: ['Docker', 'Podman', 'Kubernetes', 'EKS', 'AKS', 'GKE'],
+      color: 'from-yellow-500 to-cyan-700',
     },
     {
       title: 'DevSecOps',
@@ -56,7 +62,7 @@ const Skills = () => {
       color: 'from-orange-500 to-orange-700',
     },
     {
-      title: 'Observability',
+      title: 'Observability & Monitoring',
       icon: Database,
       skills: ['Grafana', 'Prometheus', 'ELK Stack', 'CloudWatch', 'X-Ray'],
       color: 'from-green-500 to-green-700',

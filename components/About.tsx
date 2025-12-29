@@ -95,7 +95,7 @@ const About = () => {
                     <h3 className="text-xl font-semibold mb-2 text-white">Professional Background</h3>
                     <p className="text-gray-300 leading-relaxed">
                       DevOps and Cloud specialist with 8.6 of experience in Java and distributed systems.
-Certified AWS Solutions Architect – Associate (SAA-C03) and Certified Kubernetes
+Certified AWS Solutions Architect – Associate (SAA-C03) and Kubernetes
 Administrator (CKA).
                     </p>
                   </div>
@@ -111,7 +111,7 @@ Administrator (CKA).
                   <div>
                     <h3 className="text-xl font-semibold mb-2 text-white">Expertise & Impact</h3>
                     <p className="text-gray-300 leading-relaxed">
-                      deep expertise in Kubernetes, Docker, Microservices, Java
+                      Deep expertise in Kubernetes, Docker, Microservices, Java
 Spring Boot, Terraform, CI/CD using GitHub Actions, and cloud monitoring using
 Prometheus and Grafana.
                     </p>
