@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ArrowRight, BookOpen, Calendar, Share2 } from 'lucide-react'
+import { ArrowRight, BookOpen, Calendar } from 'lucide-react'
 
 interface BlogPost {
   id: number
