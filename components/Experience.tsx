@@ -47,7 +47,7 @@ const Experience = () => {
     },
     {
       company: 'Photon Infotech',
-      logo: '/assets/img/profile.png',
+      logo: '/assets/img/photon_logo.png',
       position: 'Senior Software Engineer',
       duration: 'May 2021 - Nov 2021',
       location: 'Bengaluru, India',
@@ -60,7 +60,7 @@ const Experience = () => {
     },
     {
       company: 'L&T Technology Services',
-      logo: '/assets/img/profile.png',
+      logo: '/assets/img/LT.png',
       position: 'Engineer',
       duration: 'Nov 2020 - May 2021',
       location: 'Bengaluru, India',

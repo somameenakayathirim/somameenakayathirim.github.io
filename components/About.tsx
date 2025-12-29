@@ -54,7 +54,7 @@ const About = () => {
                 {/* Profile Image */}
                 <div className="w-48 h-48 mx-auto mb-6">
                   <Image 
-                    src="/assets/img/profile.png" 
+                    src="/assets/img/profile.jpg" 
                     alt="Soma Meena Kayathiri M" 
                     width={192}
                     height={192}
