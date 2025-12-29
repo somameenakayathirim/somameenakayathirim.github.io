@@ -25,20 +25,6 @@ const Certifications = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
 
   const certifications = [
-    {
-      title: 'AWS Cloud Quest: Machine Learning',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/machine_learning.png',
-      link: 'https://www.credly.com/badges/51fcc1d2-8f44-4b57-b4b6-77937c97d55b',
-    },
-    {
-      title: 'AWS Cloud Quest: Data Analytics',
-      issuer: 'Amazon Web Services',
-      credential: 'View Certificate',
-      image: '/assets/img/data_analytics.png',
-      link: 'https://www.credly.com/badges/16915592-65da-429e-8aca-60d2bda54f9a',
-    },
   ]
 
   return (
@@ -51,7 +37,7 @@ const Certifications = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-white mb-2">
-            Certificates
+            Certifications
           </h2>
         </motion.div>
 
