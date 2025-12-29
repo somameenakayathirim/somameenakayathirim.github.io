@@ -29,14 +29,14 @@ const Certifications = () => {
       title: 'CKA: Certified Kubernetes Administrator',
       issuer: 'Linux Foundation',
       credential: 'View Certificate',
-      image: '/assets/img/cka_logo.png',
+      image: '/assets/img/cka.png',
       link: 'https://www.credly.com/badges/468140ec-49f8-48da-962e-a64d2492313c',
     },
     {
       title: 'AWS Certified Solutions Architect – Associate',
       issuer: 'Amazon Web Services',
       credential: 'View Certificate',
-      image: '/assets/img/aws_solutions_architect.png',
+      image: '/assets/img/aws_saa.png',
       link: 'https://www.credly.com/badges/4cd21895-e359-41ea-8ab6-9991a65aaa1c',
     },
   ]
