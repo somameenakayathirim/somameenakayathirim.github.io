@@ -2,8 +2,21 @@
  * Projects Component
  * 
  * Perso      ti    {
-      tit    {
+      ti    {
+      ti    {
       title: 'EKS Secure using Calico Kyverno GuardDuty',
+      description: 'Implemented security controls for EKS using Calico network policies, Kyverno policies for admission controls, and integrated AWS GuardDuty and KMS for threat detection and key management.',
+      tech: ['AWS EKS', 'GuardDuty', 'Calico', 'Kyverno', 'AWS KMS'],
+      gradient: 'from-red-600 to-rose-600',
+      icon: '🔒',
+      github: 'https://github.com/somameenakayathirim/EKS_Secure_using_Calico_Kyverno_GuardDuty_project',
+    },an's Robot Shop Deployment in AWS EKS",
+      description: 'Deployed Stan\'s Robot Shop application on AWS EKS using Docker images, Helm, and AWS Application Load Balancer Controller for routing.',
+      tech: ['Docker', 'AWS EKS', 'Helm', 'AWS Application Load Balancer Controller'],
+      gradient: 'from-sky-500 to-blue-600',
+      icon: '🤖',
+      github: 'https://github.com/somameenakayathirim/Three-Tier-Architecture-Deployed-in-AWS-EKS',
+    },     title: 'EKS Secure using Calico Kyverno GuardDuty',
       description: 'Implemented security controls for EKS using Calico network policies, Kyverno policies for admission controls, and integrated AWS GuardDuty and KMS for threat detection and key management.',
       tech: ['AWS EKS', 'GuardDuty', 'Calico', 'Kyverno', 'AWS KMS'],
       gradient: 'from-red-600 to-rose-600',
