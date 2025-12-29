@@ -28,7 +28,7 @@ const Blog = () => {
       date: '2 days ago',
       readTime: '8 min read',
       tags: ['Kubernetes', 'KEDA', 'RabbitMQ', 'DevOps'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/event-driven-autoscaling-in-kubernetes-using-keda-rabbitmq-8c0f0e5e8f5e',
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ const Blog = () => {
       date: 'Feb 4',
       readTime: '10 min read',
       tags: ['AWS', 'EKS', 'Security', 'Kubernetes'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/securing-aws-eks-with-kyverno-calico-guarduty-7d8c5e9b2f3a',
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const Blog = () => {
       date: 'Jan 25',
       readTime: '12 min read',
       tags: ['Jenkins', 'ArgoCD', 'CI/CD', 'AWS'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/complete-jenkins-ci-cd-pipeline-with-argocd-aws-eks-deployment-4e5f2c8b9d1a',
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ const Blog = () => {
       date: 'Jan 8',
       readTime: '6 min read',
       tags: ['Docker', 'DevOps', 'Containerization'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/introduction-to-docker-multi-stage-builds-6f3e2a8c1d5b',
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ const Blog = () => {
       date: 'Jan 4',
       readTime: '7 min read',
       tags: ['AWS', 'Networking', 'Cloud'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/nat-gateway-vs-vpc-endpoint-in-aws-9c2f5e8b4a7d',
     },
     {
       id: 6,
@@ -73,7 +73,7 @@ const Blog = () => {
       date: 'Jan 2',
       readTime: '9 min read',
       tags: ['Kubernetes', 'Networking', 'DevOps'],
-      url: 'https://medium.com/somameenakayathiri',
+      url: 'https://somameenakayathiri.medium.com/service-type-load-balancer-vs-ingress-controller-in-kubernetes-3a6f1e9c2d8b',
     },
   ]
 
