@@ -72,7 +72,7 @@ const Experience = () => {
     },
     {
       company: 'Altran Technologies',
-      logo: '/assets/img/tata_elxsi.png',
+      logo: '/assets/img/altran_logo.jpg',
       position: 'Software Engineer',
       duration: 'Apr 2017 - Oct 2020',
       location: 'Chennai, India',

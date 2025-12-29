@@ -56,8 +56,9 @@ const Certifications = () => {
         </motion.div>
 
         {/* AWS Cloud Quest Certifications */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[calc(100vh-200px)] overflow-visible">
-          {certifications.map((cert, index) => (
+        <div className="flex justify-center">
+          <div className="grid md:grid-cols-2 gap-6 w-full max-w-2xl">
+            {certifications.map((cert, index) => (
             <motion.a
               key={cert.title}
               href={cert.link}
@@ -94,6 +95,7 @@ const Certifications = () => {
               </div>
             </motion.a>
           ))}
+          </div>
         </div>
       </div>
     </section>
