@@ -27,7 +27,7 @@ A modern, high-performance portfolio website showcasing expertise in Data Scienc
 
 ### Content Sections
 - 👤 **About** - Professional background and expertise
-- 💼 **Experience** - 9.5+ years across 3 companies
+- 💼 **Experience** - 8.6+ years across 3 companies
 - 🛠️ **Skills** - Categorized technical stack
 - 🚀 **Projects** - 7 featured AI/ML projects
 - 🏆 **Certifications** - 6 AWS Cloud Quest badges

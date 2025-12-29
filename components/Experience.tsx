@@ -100,7 +100,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            9.5+ years of delivering impactful AI/ML and data science solutions
+            8.6+ years of delivering impactful Cloud DevOps and infrastructure solutions
           </p>
         </motion.div>
 

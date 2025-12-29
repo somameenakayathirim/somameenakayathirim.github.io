@@ -64,12 +64,12 @@ const About = () => {
                 
                 {/* Name and Title */}
                 <h3 className="text-2xl font-bold mb-2 text-white">Soma Meena Kayathiri M</h3>
-                <p className="text-primary-400 font-semibold text-lg">Senior Data Science Engineer</p>
+                <p className="text-primary-400 font-semibold text-lg">Cloud DevOps Engineer</p>
                 
                 {/* Quick Stats */}
                 <div className="mt-4 flex justify-center gap-2">
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
-                    9.5+ Years
+                    8.6+ Years
                   </span>
                   <span className="px-3 py-1 bg-primary-900/30 text-primary-300 rounded-full text-sm">
                     US Patent Holder
