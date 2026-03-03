@@ -26,6 +26,13 @@ const Certifications = () => {
 
   const certifications = [
     {
+      title: 'AWS: DevOps Engineer Professional',
+      issuer: 'Linux Foundation',
+      credential: 'View Certificate',
+      image: '/assets/img/aws_devops.png',
+      link: 'https://www.credly.com/badges/3c18cf39-99c4-4997-9d83-819227a08d4b',
+    },
+    {
       title: 'CKA: Certified Kubernetes Administrator',
       issuer: 'Linux Foundation',
       credential: 'View Certificate',
